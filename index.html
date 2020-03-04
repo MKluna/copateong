@@ -10,56 +10,123 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/team.css">
+    <!---->
+    <!-- NavBar para iconos -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!---->
+
 </head>
 
 <body>
+    <Header>
+        <!-- NavBar -->
+        <nav class="navbar fixed-top navbar-expand-sm navbar-template  navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="images/copatelogo.png" width="55%" height="35%">
+            </a>
+            <div class="d-flex flex-row order-2 order-sm-3">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <!-- <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-youtube"></i></a></li> -->
+                    <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse order-3 order-sm-2" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Proyectos Recientes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Quienes Somos?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Que Hacemos?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cooperaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Comunidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Colaboradores</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!---->
+    </Header>
+    
     <!--Carrousel --------------------------------------------------------------------------------------------->
     <section>
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/carousel_inicio/1.jpg" class="d-block w-100" alt="...">
-            <div class="etiqueta_carrousel">
-                <hgroup>
-                    <h1>We are creative</h1>        
-                    <h3>Get start your next awesome project</h3>
-                </hgroup>
-                <button type="button" class="btn btn-warning">Unirme a Copate</button>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/carousel_inicio/1.jpg" class="d-block w-100" alt="...">
+                <div class="etiqueta_carrousel">
+                    <hgroup>
+                        <h1>We are creative</h1>        
+                        <h3>Get start your next awesome project</h3>
+                    </hgroup>
+                    <button type="button" class="btn btn-warning">Unirme a Copate</button>
+                  </div>
               </div>
+              <div class="carousel-item">
+                <img src="images/carousel_inicio/2.jpg" class="d-block w-100" alt="...">
+                <div class="etiqueta_carrousel">
+                    <hgroup>
+                        <h1>We are creative</h1>        
+                        <h3>Get start your next awesome project</h3>
+                    </hgroup>
+                    <button type="button" class="btn btn-warning">Unirme a Copate</button>
+                  </div>  
+            </div>
+              <div class="carousel-item">
+                <img src="images/carousel_inicio/3.jpg" class="d-block w-100" alt="...">
+                <div class="etiqueta_carrousel">
+                    <hgroup>
+                        <h1>We are creative</h1>        
+                        <h3>Get start your next awesome project</h3>
+                    </hgroup>
+                    <button type="button" class="btn btn-warning">Unirme a Copate</button>
+                  </div>  
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <div class="carousel-item">
-            <img src="images/carousel_inicio/2.jpg" class="d-block w-100" alt="...">
-            <div class="etiqueta_carrousel">
-                <hgroup>
-                    <h1>We are creative</h1>        
-                    <h3>Get start your next awesome project</h3>
-                </hgroup>
-                <button type="button" class="btn btn-warning">Unirme a Copate</button>
-              </div>  
         </div>
-          <div class="carousel-item">
-            <img src="images/carousel_inicio/3.jpg" class="d-block w-100" alt="...">
-            <div class="etiqueta_carrousel">
-                <hgroup>
-                    <h1>We are creative</h1>        
-                    <h3>Get start your next awesome project</h3>
-                </hgroup>
-                <button type="button" class="btn btn-warning">Unirme a Copate</button>
-              </div>  
+    </section>
+    <!-----------------------------------------------------------------------------------------Carrousel ------>
+    <!-- SECCION NUESTRO EQUIPO    -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>     
+        <div class="container">
+        <h2 class="text-center">¿Quienes Somos?</h2>
+        <p class="text-center">Descripcion</p>
+          <h2 class="text-center">Nuesto Equipo</h2>
+            <p class="text-center">Descripcion</p>
+           <section class="customer-logos slider">
+              <div class="slide"><img class="img-fluid" src="images/miembros/copatemember1.png" alt=""><p class="text-center">Name</p><p class="text-center">Desciption</p></div>
+              <div class="slide"><img class="img-fluid" src="images/miembros/copatemember2.png" alt=""><p class="text-center">Name</p><p class="text-center">Desciption</p></div>
+              <div class="slide"><img class="img-fluid" src="images/miembros/copatemember3.png" alt=""><p class="text-center">Name</p><p class="text-center">Desciption</p></div>
+              <div class="slide"><img class="img-fluid" src="images/miembros/copatemember4.png" alt=""><p class="text-center">Name</p><p class="text-center">Desciption</p></div>
+              <div class="slide"><img class="img-fluid" src="images/miembros/copatemember5.png" alt=""><p class="text-center">Name</p><p class="text-center">Desciption</p></div>
+              <div class="slide"><img class="img-fluid" src="images/miembros/copatemember6.png" alt=""><p class="text-center">Name</p><p class="text-center">Desciption</p></div>
+              <div class="slide"><img class="img-fluid" src="images/miembros/copatemember7.png" alt=""><p class="text-center">Name</p><p class="text-center">Desciption</p></div>
+              <div class="slide"><img class="img-fluid" src="images/miembros/copatemember8.png" alt=""><p class="text-center">Name</p><p class="text-center">Desciption</p></div>
+              <div class="slide"><img class="img-fluid" src="images/miembros/copatemember9.png" alt=""><p class="text-center">Name</p><p class="text-center">Desciption</p></div>
+           </section>
         </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-</section>
-<!-----------------------------------------------------------------------------------------Carrousel ------>
+    <!-- SECCION NUESTRO EQUIPO    -->    
+    
+
+
+
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -71,9 +138,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
-
-       
 </body>
-
+<script src="js/teamSlider.js"></script>
 </html>
