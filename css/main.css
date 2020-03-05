@@ -44,8 +44,9 @@ html, body{
             top: 50%;
             bottom: 50%;
     }   
-    .tamano_carousel{
-        
+    .Timag{
+        height: 13.8em;
+        background-color: white;
     
     }
 }
@@ -130,3 +131,19 @@ a footer {
 }
 
 /* ------------------ Footer */
+
+
+/* .bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+} */
