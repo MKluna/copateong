@@ -181,35 +181,6 @@ footer .ulSocial {
 
 /* ------------------ Footer */
 
-/* .bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-} */
-
-/* #caberecaNoticias {
-  background-image: url("https://images5.alphacoders.com/410/410498.jpg");
-  min-height: 35%;
-}
-
-#caberecaNoticias header {
-  background-color: blueviolet;
-  height: 100%;
-}
-
-#caberecaNoticias header h2 {
-  margin-top: 15px;
-} */
-
 .imagencentrarNoticias {
   display: block; /*agregado pero no se si es esto, si la pagina queda fea es culpa de monge* */
   background-position: center;
@@ -269,4 +240,49 @@ footer .ulSocial {
   align-items: center;
   display: flex;
 }
+
+.alineadoIzquierda {
+  text-align: right;
+}
+
+/* Section Noticas -------------------------------------------------------------- */
+.noticiasSection {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.noticiasDiv {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.noticiasDiv h1 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.noticiasDiv a {
+  margin-bottom: 2%;
+}
+/* Section Noticas */
+
+/* Section Proyectos -------------------------------------------------------------- */
+.proyectoSection {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.proyectoDiv {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.proyectoDiv h1 {
+  text-align: center;
+  margin-bottom: 2%;
+  color: aliceblue;
+}
+
+.proyectoDiv a {
+  margin-bottom: 2%;
+}
+/* Section Proyectos */
 
