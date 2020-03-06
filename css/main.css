@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Quicksand&display=swap');
+
 html,
 body {
   width: 100%;
@@ -270,3 +272,22 @@ footer .ulSocial {
   display: flex;
 }
 
+/* ESTILOS */
+h1{
+  font-family: 'Poppins', sans-serif;
+  color: #E36B2C;
+}
+h2,h3{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(94, 255, 0);
+}
+p{
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  font-style: italic;
+}
+p.nombres{
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-style: italic;
+}
