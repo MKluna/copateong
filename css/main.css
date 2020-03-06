@@ -212,65 +212,45 @@ footer .ulSocial {
   margin-top: 15px;
 } */
 
-.imagencentrarNoticias {
-  display: block; /*agregado pero no se si es esto, si la pagina queda fea es culpa de monge* */
-  background-position: center;
-  background-image: url("https://images5.alphacoders.com/410/410498.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 50%;
-  border-radius: 0px; /*lo tengo que agregar pq no sé porque se le pone las puntas redondas a la img*/
-  min-height: 25rem;
-}
-.imagencentrarNoticias h1 {
-  margin-top: 5%;
-  font-size: 5rem;
-  color: rgba(255, 255, 255, 1);
-
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.imagencentrarNoticias p {
-  font-size: 2rem;
-  color: rgba(255, 255, 255, 0.9);
-
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+.alineadoIzquierda {
+  text-align: right;
 }
 
-.imagencentrarProyectos {
-  display: block; /*agregado pero no se si es esto, si la pagina queda fea es culpa de monge* */
-  background-position: center;
-  background-image: url("https://wallpaperplay.com/walls/full/d/6/c/103707.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 50%;
-  border-radius: 0px; /*lo tengo que agregar pq no sé porque se le pone las puntas redondas a la img*/
-  min-height: 25rem;
-}
-.imagencentrarProyectos h1 {
-  margin-top: 5%;
-  font-size: 5rem;
-  color: rgba(255, 255, 255, 1);
+/* Section Noticas -------------------------------------------------------------- */
 
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.imagencentrarProyectos p {
-  font-size: 2rem;
-  color: rgba(255, 255, 255, 0.9);
 
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+.noticiasDiv {
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
+
+.noticiasDiv h1 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.noticiasDiv a {
+  margin-bottom: 2%;
+}
+/* Section Noticas */
+
+/* Section Proyectos -------------------------------------------------------------- */
+
+
+.proyectoDiv {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.proyectoDiv h1 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.proyectoDiv a {
+  margin-bottom: 2%;
+}
+/* Section Proyectos */
 
 /* ESTILOS */
 h1{
