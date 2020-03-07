@@ -2,8 +2,9 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  width: 99%;
+  height: 99%;
+  padding: 0%;
 }
 
 /*Carrousel--------------------------------------------------------------------------------------------------------------------------------------*/
@@ -38,7 +39,6 @@ body {
     .etiqueta_carrousel { width: 50%; }    
 }
 @media screen and (max-width: 640px){
-    /* .hero { width: 90%; }  */   
     .etiqueta_carrousel h1 { font-size: 1.3em; }  
     .etiqueta_carrousel h3 { font-size: 0.5em; }   
     .etiqueta_carrousel { height: 50%; 
@@ -118,7 +118,6 @@ body {
   right: 0px;
   line-height: 70px;
   font-size: 50px;
-  /* text-decoration: none; */
   color: #262626;
   transition: 0.5s;
   margin: 0 50px;
