@@ -194,6 +194,122 @@ body {
 
 /*-----------------------------------------------------------------------------------------------------------------Comunidad*/
 
+/*Cooperacion------------------*/
+
+.cooperar {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+
+.sectionCooperar h2{
+  color: black;
+  font-size: 3em;
+}
+
+.sectionCooperar p{
+  color: black;
+  font-size: 1.7em;
+}
+/* .comunidad h2 {
+  padding-bottom: 2em;
+  padding-top: 1em;
+} */
+.cooperar p {
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+.cooepra_especial{
+  width: 700px;
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+.cooperar ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+.cooperar ul li {
+  list-style: none;
+  display: inline-block;
+  /* margin: 0 auto; */
+}
+.cooperar ul li a {
+  display: block;
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  right: 0px;
+  line-height: 110px;
+  font-size: 90px;
+  color: #262626;
+  transition: 0.5s;
+  margin-top: 7%;
+}
+
+.cooperar ul li a .giro {
+  position: absolute;
+  transition: transform 0.5s;
+}
+.cooperar ul li a .giro:nth-child(1),
+.cooperar ul li a .giro:nth-child(3) {
+  width: 100%;
+  height: 1px;
+  background: #262626;
+}
+.cooperar ul li a .giro:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+.cooperar ul li a:hover .giro:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+.cooperar ul li a .giro:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+.cooperar ul li a:hover .giro:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+@media screen and (min-width: 980px){ 
+  /* .etiqueta_carrousel { width: 50%; }     */
+}
+@media screen and (max-width: 640px){
+  .sectionCooperar h2{  font-size: 1.5em;}
+  
+  .sectionCooperar p{ font-size: 1em;
+  margin: 0px;}
+
+  .cooepra_especial{
+    width: 100%;
+    padding-bottom: 2em;
+    padding-top: 1em;
+  }
+  .cooperar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 20%;
+  }
+
+  .cooperar ul li a {
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    line-height: 70px;
+    font-size: 90px;
+    /* margin: 0 0.3em; */
+  }
+}
+/*-------------------------Cooperacion*/
+
+
 /* Footer ------------------*/
 footer {
   width: 100%;
