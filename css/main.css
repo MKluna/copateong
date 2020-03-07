@@ -56,14 +56,14 @@ body {
 /*---------------------------------------------------------------------------------------------------------------------Carrousel*/
 /*Comunidad-------------------------------------------------------------------------------------------------------------------*/
 
-.comunidad {
+/* .comunidad {
     margin: 0;
     padding: 0;
     overflow-y: hidden !important;
   }
   .comunidad p {
     padding-bottom: 2em;
-    padding-top: 1em;
+    padding-top: 1em;}
 
 @media screen and (min-width: 980px) {
   .etiqueta_carrousel {
@@ -73,7 +73,7 @@ body {
 }
 @media screen and (max-width: 640px) {
   /* .hero { width: 90%; }  */
-  .etiqueta_carrousel h1 {
+  /* .etiqueta_carrousel h1 {
     font-size: 1.3em;
   }
   .etiqueta_carrousel h3 {
@@ -86,9 +86,9 @@ body {
     top: 50%;
     bottom: 50%;
   }
-  .tamano_carousel {
-  }
-} } /*al que se olvido poner ese corchete le espera tabla*/
+  .tamano_carousel { 
+  } */
+/* } } al que se olvido poner ese corchete le espera tabla */
 /*---------------------------------------------------------------------------------------------------------------------Carrousel*/
 /*Comunidad-------------------------------------------------------------------------------------------------------------------*/
 
@@ -97,6 +97,20 @@ body {
   padding: 0;
   overflow-y: hidden !important;
 }
+
+.sectionComunidad h2{
+  color: black;
+  font-size: 3em;
+}
+
+.sectionComunidad p{
+  color: black;
+  font-size: 1.7em;
+}
+/* .comunidad h2 {
+  padding-bottom: 2em;
+  padding-top: 1em;
+} */
 .comunidad p {
   padding-bottom: 2em;
   padding-top: 1em;
@@ -113,11 +127,11 @@ body {
 .comunidad ul li a {
   display: block;
   position: relative;
-  width: 70px;
-  height: 70px;
+  width: 110px;
+  height: 110px;
   right: 0px;
-  line-height: 70px;
-  font-size: 50px;
+  line-height: 110px;
+  font-size: 90px;
   color: #262626;
   transition: 0.5s;
   margin: 0 50px;
@@ -153,6 +167,31 @@ body {
   transform-origin: right;
   transition: transform 0.5s;
 }
+
+/********************************/
+/*       response       */
+/********************************/
+
+@media screen and (min-width: 980px){ 
+  /* .etiqueta_carrousel { width: 50%; }     */
+}
+@media screen and (max-width: 640px){
+  .sectionComunidad h2{  font-size: 1.5em;}
+  
+  .sectionComunidad p{ font-size: 1em;
+  margin: 0px;}
+  .comunidad ul li a {
+    width: 70px;
+    height: 70px;
+    right: 0px;
+    line-height: 70px;
+    font-size: 60px;
+    margin: 0 0.3em;
+  }
+}
+
+
+
 /*-----------------------------------------------------------------------------------------------------------------Comunidad*/
 
 /* Footer ------------------*/
