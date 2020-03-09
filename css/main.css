@@ -454,8 +454,11 @@ text-indent: 30pt;        /* para sangrias */
 @media screen and (max-width: 640px){
   p.nombres{
     font-family: 'Quicksand', sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
      word-wrap: break-word;
+     font-style: italic;
+     font-weight: bold;
+     font-size: x-large;
   }
   .alinearparaabajo{
     padding-top: 15%;
