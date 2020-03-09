@@ -49,7 +49,7 @@
 /* Colaboradores */
 .parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .parallax6, .parallax7  {
   position: relative;
-  opacity: .75;
+  opacity: .95;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
