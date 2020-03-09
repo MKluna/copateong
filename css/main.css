@@ -451,3 +451,10 @@ word-spacing: 5pt;        /* para separacion entre palabras */
 line-height: 20pt;        /* para la separacion entre lineas */ 
 text-indent: 30pt;        /* para sangrias */ 
 }
+@media screen and (max-width: 640px){
+  p.nombres{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(0, 0, 0);
+     word-wrap: break-word;
+  }
+}
