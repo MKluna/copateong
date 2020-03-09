@@ -1,220 +1,135 @@
-//
-// Read the blog post here:
-// http://una.im/sass-pixel-art
-//
+/*
+  https://developer.mozilla.org/en/docs/Web/CSS/box-shadow
+  box-shadow: [inset?] [top] [left] [blur] [size] [color];
 
-// Setting the colors we're syncing up with
-$pixel-color-map: (
-  'r' : #f00,
-  'w': #fff,
-  'k': #000,
-  'o': transparent,
-  't': #83401f,
-  'p': #ffbc77,
-  'b': #06f,
-  'y': #ff0,
-  'n': #ff8000,
-  'g': #5ac528
-);
+  Tips:
+    - We're setting all the blurs to 0 since we want a solid fill.
+    - Add the inset keyword so the box-shadow is on the inside of the element
+    - Animating the inset shadow on hover looks like the element is filling in from whatever side you specify ([top] and [left] accept negative values to become [bottom] and [right])
+    - Multiple shadows can be stacked
+    - If you're animating multiple shadows, be sure to keep the same number of shadows so the animation is smooth. Otherwise, you'll get something choppy.
+*/
 
-// Size of the pixels
-$pixel-size: 10px !default;
-
-// Mario pixel art matrices!
-$pixel-art:(
-  mushroom: (
-    (o o o o o k k k k k k o o o o o)
-    (o o o k k r r r r w w k k o o o)
-    (o o k w w r r r r w w w w k o o)
-    (o k w w r r r r r r w w w w k o)
-    (o k w r r w w w w r r w w w k o)
-    (k r r r w w w w w w r r r r r k)
-    (k r r r w w w w w w r r w w r k)
-    (k w r r w w w w w w r w w w w k)
-    (k w w r r w w w w r r w w w w k)
-    (k w w r r r r r r r r r w w r k)
-    (k w r r k k k k k k k k r r r k)
-    (o k k k w w k w w k w w k k k o)
-    (o o k w w w k w w k w w w k o o)
-    (o o k w w w w w w w w w w k o o)
-    (o o o k w w w w w w w w k o o o)
-    (o o o o k k k k k k k k o o o o)
-  ),
-
-  mario: (
-    (o o o r r r r r r o o o o)
-    (o o r r r r r r r r r r o)
-    (o o t t t p p p k p o o o)
-    (o t p t p p p p k p p p o)
-    (o t p t t p p p p k p p p)
-    (o t t p p p p p k k k k o)
-    (o o o p p p p p p p p o o)
-    (o o r r b r r r r o o o o)
-    (o r r r b r r b r r r r o)
-    (r r r r b b b b r r r r o)
-    (p p r b y b b y b r p p o)
-    (p p p b b b b b b p p p o)
-    (p p b b b b b b b b p p o)
-    (o o b b b o o b b b o o o)
-    (o t t t o o o o t t t o o)
-    (t t t t o o o o t t t t o)
-  ),
-  star: (
-    (o o o o o o o k k o o o o o o o)
-    (o o o o o o k y y k o o o o o o)
-    (o o o o o o k y y k o o o o o o)
-    (o o o o o k y y y y k o o o o o)
-    (k k k k k k y y y y k k k k k k)
-    (k y y y y y y y y y y y y y y k)
-    (o k y y y y k y y k y y y y k o)
-    (o o k y y y k y y k y y y k o o)
-    (o o o k y y k y y k y y k o o o)
-    (o o o k y y y y y y y y k o o o)
-    (o o k y y y y y y y y y y k o o)
-    (o o k y y y y y y y y y y k o o)
-    (o k y y y y y k k y y y y y k o)
-    (o k y y y k k o o k k y y y k o)
-    (k y y k k o o o o o o k k y y k)
-    (k k k o o o o o o o o o o k k k)
-  ),
-  flower: (
-    (o o o k k k k k k k k k k o o o)
-    (o k k k n n n n n n n n k k k o)
-    (k k n n n y y y y y y n n n k k)
-    (k n n y y y k w w k y y y n n k)
-    (k n n y y y k y y k y y y n n k)
-    (k n n n n y y y y y y n n n n k)
-    (k k n n n n n n n n n n n n k k)
-    (o k k k n n n n n n n n k k k o)
-    (o o o k k k k k k k k k k o o o)
-    (o k k o o o k g g k o o o k k o)
-    (k g g k k o k g g k o k k g g k)
-    (k g g g g k k g g k k g g g g k)
-    (k g g g g g k g g k g g g g g k)
-    (o k g g g g k g g k g g g g k o)
-    (o o k k g g g g g g g g k k o o)
-    (o o o o k k k k k k k k o o o o)
-  ),
-  chance: (
-    (o t t t t t t t t t t t t t t o)
-    (t p p p p p p p p p p p p p p k)
-    (t p k p p p p p p p p p p k p k)
-    (t p p p p t t t t t p p p p p k)
-    (t p p p t t k k k t t p p p p k)
-    (t p p p t t k p p t t k p p p k)
-    (t p p p t t k p p t t k p p p k)
-    (t p p p p k k p t t t k p p p k)
-    (t p p p p p p t t k k k p p p k)
-    (t p p p p p p t t k p p p p p k)
-    (t p p p p p p p k k p p p p p k)
-    (t p p p p p p t t p p p p p p k)
-    (t p p p p p p t t k p p p p p k)
-    (t p k p p p p p k k p p p k p k)
-    (t p p p p p p p p p p p p p p k)
-    (k k k k k k k k k k k k k k k k)
-  ),
-  boo: (
-    (o o o o o k k k k k o o o o o o)
-    (o o o k k w w w w w k k o o o o)
-    (o o k w w w w w w w w w k o o o)
-    (o k w w w w w w w w w w w k o o)
-    (o k w k w k w w w w w w w w k o)
-    (k w w k w k w w w w k k k w w k)
-    (k w w k w k w w w k w w k w w k)
-    (k w w w w w w w w w w w k w k o)
-    (k w r w r w r w w w w k w w w k)
-    (k w r r r r r w w w w w w w w k)
-    (k w r r r r r w w w w w w w w k)
-    (o k w r r r r r w w w w w w w k)
-    (o k w r w r w r w w w w w w k o)
-    (o o k w w w w w w w w w w k o o)
-    (o o o k k w w w w w w k k o o o)
-    (o o o o o k k k k k k o o o o o)
-  ),
-);
-
-// Function to read the matrix and pixelize it!
-@function pixelize($matrix, $size){
-    $l: length($matrix); // length of the entire
-    $sh: ''; // shadows list
-    $i: $l; // length of the line
-
-    // read through the length of the matrix and decide on the box shadow color and position
-    @for $i from 1 through $l{
-      $row: nth($matrix,$i); //
-
-      @for $j from 1 through length($row){
-          $item: nth($row,$j);
-
-          @if map-has-key($pixel-color-map, $item) {
-            $sh:  $sh + ($j*$size) + ' ' + ($i*$size) + ' ' + map-get($pixel-color-map, $item);
-          } @else {
-            @warn 'there is no color specified in "$pixel-color-map" for: "#{$item}"';
-          }
-
-        @if not ($j == length($row) and $i == $l) {
-          $sh: $sh + ',';
-        }
-      }
-    }
-
-    @return unquote($sh);
+// Animate the size, inside
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
 }
 
-// Mixin to style each item
-@mixin style-item($matrix, $size){
-  position: relative; // pixels stack next to each other
+// Animate the size, outside
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
 
-  // set width & height of icon based on size of pixels
-  width:($size * length(nth($matrix,1)));
-  height:($size * length($matrix));
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
 
-  &:after{
-    content: '';
+// Stack multiple shadows, one from the left, the other from the right
+.close:hover,
+.close:focus {
+  box-shadow: 
+    inset -3.5em 0 0 0 var(--hover),
+    inset 3.5em 0 0 0 var(--hover);  
+}
 
-    // position everything from the top left corner
-    position: absolute;
-    top: (-$size);
-    left: (-$size);
-    width: $size;
-    height: $size;
+// Size can also be negative; see how it's smaller than the element
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
 
-    // this is where we make the stitch
-    box-shadow: pixelize($matrix,$size);
+// Animating from the bottom
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+// And from the left
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+// Multiple shadows, one on the outside, another on the inside
+.offset {  
+  box-shadow: 
+    0.3em 0.3em 0 0 var(--color),
+    inset 0.3em 0.3em 0 0 var(--color);
+  
+  &:hover,
+  &:focus {
+    box-shadow: 
+      0 0 0 0 var(--hover),
+      inset 6em 3.5em 0 0 var(--hover);
   }
 }
 
-// Page styling
+//=== Set button colors
+// If you wonder why use Sass vars or CSS custom properties...
+  // Make a map with the class names and matching colors
+$colors: (
+  fill: #a972cb,
+  pulse: #ef6eae, 
+  close: #ff7f82, 
+  raise: #ffa260, 
+  up: #e4cb58, 
+  slide: #8fc866, 
+  offset: #19bc8b
+);
+
+// Sass variables compile to a static string; CSS variables are dynamic and inherited
+  // Loop through the map and set CSS custom properties using Sass variables
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
+}
+
+// Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.
+button {  
+  color: var(--color);
+  transition: 0.25s;
+  
+  &:hover,
+  &:focus { 
+    border-color: var(--hover);
+    color: #fff;
+  }
+}
+
+//=== Pen styling, ignore
 body {
-  background: #97f0fa;
+  color: #fff;
+  background: hsl(228, 62%, 28%);
+  font: 300 1em 'Fira Sans', sans-serif;
+  
+  // Center everything ever
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
 }
 
-.mario-art{
-  list-style: none;
-  margin: 3em auto;
-  max-width: 800px;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-
-  li {
-    display: inline-block;
-    margin: 2em;
-  }
-
-   @each $key, $value in $pixel-art{
-    &--#{$key}{
-      @include style-item($value, $pixel-size);
-    }
-  }
+// Basic button styles
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
 }
 
-// just styling the link to the post :)
+h1 { font-weight: 400; }
 
-a {
-  text-align: center;
-  display: block;
-  width: 100%;
-  color: #000;
-  font-family: 'Open Sans', sans-serif;
+code { 
+  color: #e4cb58;
+  font: inherit;
 }
