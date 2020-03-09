@@ -445,3 +445,9 @@ p.nombres{
   font-weight: bold;
 }
 
+.separecion{
+  letter-spacing: 2pt;      /* para separar entgre letras */
+word-spacing: 5pt;        /* para separacion entre palabras */  
+line-height: 20pt;        /* para la separacion entre lineas */ 
+text-indent: 30pt;        /* para sangrias */ 
+}
