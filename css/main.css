@@ -457,4 +457,7 @@ text-indent: 30pt;        /* para sangrias */
     color: rgb(0, 0, 0);
      word-wrap: break-word;
   }
+  .alinearparaabajo{
+    padding-top: 15%;
+  }
 }
