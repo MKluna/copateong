@@ -43,7 +43,7 @@
 
 /* Colaboradores */
 .parallax7 {
-  background: url('https://cdn.wallpapersafari.com/78/64/scLHMf.jpg');
+  background: url('https://cdn.wallpapersafari.com/68/1/Blm5sZ.jpg');
   min-height: 100%;
 }
 /* Colaboradores */
@@ -54,4 +54,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+@media screen and (max-width: 640px){
+  .parallax7{
+    max-height: 60%;
+    min-height: 50%;
+
+  }
 }
