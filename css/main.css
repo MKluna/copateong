@@ -371,7 +371,7 @@ footer .ulSocial {
   }
 } */
 
-/* #caberecaNoticias {
+#caberecaNoticias {
   background-image: url("https://images5.alphacoders.com/410/410498.jpg");
   min-height: 35%;
 }
@@ -383,7 +383,7 @@ footer .ulSocial {
 
 #caberecaNoticias header h2 {
   margin-top: 15px;
-} */
+}
 
 .alineadoIzquierda {
   text-align: right;
