@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins|Quicksand&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins|Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
 html,
 body {
@@ -6,10 +8,14 @@ body {
   height: 99%;
   padding: 0%;
   padding-left: 1%;
+  
+
+
 }
 
 /*Carrousel--------------------------------------------------------------------------------------------------------------------------------------*/
 .etiqueta_carrousel {
+  
   opacity: 0.9;
   background-color: rgba(0, 0, 0, 0.75);
   height: 50%;
@@ -31,6 +37,7 @@ body {
   transform: translate3d(-50%, -50%, 0);
 }
 .etiqueta_carrousel h1 {
+  font-family: 'Inter', sans-serif;
   color: white;
   font-size: 4em;
   font-weight: bold;
@@ -38,6 +45,7 @@ body {
   padding: 0;
 }
 .etiqueta_carrousel h3 {
+  font-family: 'Inter', sans-serif;
   color: white;
 }
 
@@ -50,9 +58,11 @@ body {
 }
 @media screen and (max-width: 640px){
     .etiqueta_carrousel h1 {
+      font-family: 'Inter', sans-serif;
       margin-top: 5px;
       font-size: 1.3em; }  
     .etiqueta_carrousel h3 { 
+      font-family: 'Inter', sans-serif;
       margin-top: 5px;
       font-size: 0.7em; }     
     .etiqueta_carrousel { height: 50%; 
@@ -115,11 +125,17 @@ body {
 }
 
 .sectionComunidad h2{
+  
+  font-family: 'Inter', sans-serif;
+
   color: black;
   font-size: 3em;
+
+
 }
 
 .sectionComunidad p{
+  
   color: black;
   font-size: 1.7em;
 }
@@ -128,6 +144,7 @@ body {
   padding-top: 1em;
 } */
 .comunidad p {
+  font-family: 'Inter', sans-serif;
   padding-bottom: 2em;
   padding-top: 1em;
 }
@@ -219,6 +236,7 @@ body {
 }
 
 .sectionCooperar h2{
+  font-family: 'Inter', sans-serif;
   color: black;
   font-size: 3em;
 }
@@ -232,6 +250,7 @@ body {
   padding-top: 1em;
 } */
 .cooperar p {
+  font-family: 'Inter', sans-serif;
   padding-bottom: 2em;
   padding-top: 1em;
 }
@@ -398,6 +417,7 @@ footer .ulSocial {
 }
 
 .noticiasDiv h1 {
+  font-family: 'Inter', sans-serif;
   text-align: center;
   margin-bottom: 2%;
 }
@@ -416,6 +436,8 @@ footer .ulSocial {
 }
 
 .proyectoDiv h1 {
+  
+  font-family: 'Inter', sans-serif;
   text-align: center;
   margin-bottom: 2%;
 }
@@ -425,21 +447,27 @@ footer .ulSocial {
 }
 /* Section Proyectos */
 
+
+
+
 /* ESTILOS */
 h1{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 h2,h3{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 p{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
   color: black;
   font-style: italic;
   font-weight: bold;
 }
 p.nombres{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: white;
   font-style: italic;
   font-weight: bold;
@@ -453,7 +481,7 @@ text-indent: 30pt;        /* para sangrias */
 }
 @media screen and (max-width: 640px){
   p.nombres{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: rgb(0, 0, 0);
      word-wrap: break-word;
      font-style: italic;
