@@ -8,14 +8,10 @@ body {
   height: 99%;
   padding: 0%;
   padding-left: 1%;
-  
-
-
 }
 
 /*Carrousel--------------------------------------------------------------------------------------------------------------------------------------*/
 .etiqueta_carrousel {
-  
   opacity: 0.9;
   background-color: rgba(0, 0, 0, 0.75);
   height: 50%;
@@ -39,12 +35,13 @@ body {
 .etiqueta_carrousel h1 {
   font-family: 'Inter', sans-serif;
   color: white;
-  font-size: 4em;
+  font-size: 2.7em;
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
 .etiqueta_carrousel h3 {
+  font-size: 1.5em;
   font-family: 'Inter', sans-serif;
   color: white;
 }
@@ -491,4 +488,22 @@ text-indent: 30pt;        /* para sangrias */
   .alinearparaabajo{
     padding-top: 15%;
   }
+}
+
+.Stylotitulo{
+  font-family: 'Inter', sans-serif;
+  color: black;
+  font-size: 3em;
+}
+
+@media screen and (min-width: 980px){
+    
+}
+@media screen and (max-width: 640px){
+  .Stylotitulo{
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 1.6em;
+  }
+  
 }
