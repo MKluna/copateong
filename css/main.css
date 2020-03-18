@@ -531,21 +531,22 @@ p{
   font-family: 'Inter', sans-serif;
   /* font-family: 'Quicksand', sans-serif; */
   color: black;
-  font-style: italic;
+  /* font-style: italic; pone las letras en cursiva*/
   font-weight: bold;
 }
 p.nombres{
   font-family: 'Inter', sans-serif;
   color: white;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: bold;
+  margin-bottom: 0px;
 }
 
 .separecion{
   letter-spacing: 2pt;      /* para separar entgre letras */
-word-spacing: 5pt;        /* para separacion entre palabras */  
-line-height: 20pt;        /* para la separacion entre lineas */ 
-text-indent: 30pt;        /* para sangrias */ 
+  word-spacing: 5pt;        /* para separacion entre palabras */  
+  line-height: 20pt;        /* para la separacion entre lineas */ 
+  text-indent: 30pt;        /* para sangrias */ 
 }
 @media screen and (max-width: 640px){
   p.nombres{
@@ -560,3 +561,4 @@ text-indent: 30pt;        /* para sangrias */
     padding-top: 15%;
   }
 }
+
