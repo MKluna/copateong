@@ -542,6 +542,13 @@ p.nombres{
   margin-bottom: 0px;
 }
 
+.nombres-descripcion {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: small;
+
+}
+
 .separecion{
   letter-spacing: 2pt;      /* para separar entgre letras */
   word-spacing: 5pt;        /* para separacion entre palabras */  
