@@ -29,9 +29,6 @@
 
 <body style="overflow-x:hidden;" >
 <!-- Bootstrap -->
-<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
@@ -43,6 +40,10 @@
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 
 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v8.0" nonce="Ku1sV0hZ"></script>
+
+
 
 
 
@@ -52,7 +53,6 @@
         <nav class="navbar navbar-expand-sm navbar-template" style="background-color: black;">
             <a class="navbar-brand" href="#">
                 <img src="images/copatelogo.png" width="55%" height="35%">
-                <img src="images/colectivo social COPATE.png" width="25%" height="15%" style="padding-left: 5%;">
             </a>
             <div class="d-flex flex-row order-2 order-sm-3">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
@@ -62,13 +62,11 @@
             <div class="collapse navbar-collapse order-3 order-sm-2" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item" ><a style="color: black;" class="btn btn-warning nav-link m-1" href="#">Inicio</a></li>
-                    <li class="nav-item" ><a style="color: black;" class="btn btn-warning nav-link m-1" href="#section1">Quienes Somos?</a></li>
-                    <li class="nav-item" ><a style="color: black;" class="btn btn-warning nav-link m-1" href="#section2">Que Hacemos?</a></li>
-                    <li class="nav-item" ><a style="color: black;" class="btn btn-warning nav-link m-1" href="./noticas.html">Noticias</a></li>
-                    <li class="nav-item" ><a style="color: black;" class="btn btn-warning nav-link m-1" href="./proyectos.html">Proyectos</a></li>
+                    <li class="nav-item" ><a style="color: black;" class="btn btn-warning nav-link m-1" href="#section1">¿Quienes Somos?</a></li>
+                    <li class="nav-item" ><a style="color: black;" class="btn btn-warning nav-link m-1" href="#section2">¿Que Hacemos?</a></li>
+                    <li class="nav-item" ><a style="color: black;" class="btn btn-warning nav-link m-1" href="#section5">Proyectos</a></li>
                     <li class="nav-item" ><a style="color: black;" class="btn btn-warning nav-link m-1" href="#section3">Cooperaciones</a></li>
                     <li class="nav-item" ><a style="color: black;" class="btn btn-warning nav-link m-1" href="#section4">Comunidad</a></li>
-                    <li class="nav-item" ><a style="color: black;" class="btn btn-warning nav-link m-1" href="#section5">Colaboradores</a></li>
                     
                     <ul class="navbar-nav flex-row">
                         <li class="nav-item"><a style="color:white;" class="nav-link px-2" href="https://www.facebook.com/copatecatamarca/"><i class="fab fa-facebook"></i></a></li>
@@ -97,7 +95,6 @@
                         <h3>"Empezá tu futuro dando el primer paso"</h3>
                     </hgroup>
                     <a href="https://chat.whatsapp.com/Haip2HjPanx1IHfw9md6P8" target="_blank" >
-                    <button  type="button" class="mt-2 btn btn-warning">Unirme a Copate</button>
                   </a>
                   </div>
               </div>
@@ -109,7 +106,6 @@
                         <h3>"Demos una mano a la naturaleza"</h3>
                     </hgroup>
                     <a href="https://chat.whatsapp.com/Haip2HjPanx1IHfw9md6P8" target="_blank">
-                      <button  type="button" class="mt-2 btn btn-warning">Unirme a Copate</button>
                     </a>
                   </div>  
             </div>
@@ -121,7 +117,6 @@
                         <h3>"Se parte de la construcción de nuestra comunidad"</h3>
                     </hgroup>
                     <a href="https://chat.whatsapp.com/Haip2HjPanx1IHfw9md6P8" target="_blank">
-                      <button  type="button" class=" mt-2 btn btn-warning">Unirme a Copate</button>
                     </a>
                   </div>  
             </div>
@@ -179,7 +174,7 @@
               <h2 id="section2" class="text-center" style="font-weight: bold; color: rgb(0, 0, 0); background-color:gray ; border-radius: 25px;">¿Que Hacemos?</h2>
               <div class="card card-body separecion" style="border-style: solid; border-style: solid; filter:alpha(opacity=20); opacity:90%; background-color:gray">
                   <p class="text-center" style="color: rgb(255, 255, 255); font-weight: bold;">
-                    En copate acompañamos la agenda 2030 y la implementación de los Objetivos  de Desarrollo Sostenible de las Naciones Unidas.</p>
+                    En copate acompañamos la agenda 2020 y la implementación de los Objetivos  de Desarrollo Sostenible de las Naciones Unidas.</p>
                   <p class="text-center" style="color: rgb(255, 255, 255); font-weight: bold;">
                     Promovemos la colaboración público privado a través de iniciativas de innovacion social mediante la formulación de proyectos de alto impacto social y bajo costo económico para alentar la identidad y cultura de nuestra comunidad.
                   </p>
@@ -193,106 +188,13 @@
   </div>
   <!-- Que Hacemos? -->
 
-
-
-    <!-- Noticias Aqui -->
-    <div class="parallax1">
-        <section class="noticiasSection">
-            <div class="container noticiasDiv">
-                <h1 style="font-weight: bold; color: rgb(0, 0, 0); background-color:gray ; border-radius: 25px;">Noticias Recientes</h1>
-    
-                <div class="card-deck">
-                    <div class="card">
-                      <img src="./images/carousel_inicio/1.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text alineadoIzquierda"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" class="btn btn-warning">Ver Más</a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="https://scontent.fcor11-1.fna.fbcdn.net/v/t1.0-9/84534340_2539592299693106_4734577694329536512_o.jpg?_nc_cat=100&_nc_sid=110474&_nc_ohc=3qwVzOHqZMwAX-fl6IY&_nc_ht=scontent.fcor11-1.fna&oh=68761de0a509c283bb611c30d822271b&oe=5E82AEB2" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text alineadoIzquierda"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" class="btn btn-warning">Ver Más</a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="./images/carousel_inicio/2.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text alineadoIzquierda"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" class="btn btn-warning">Ver Más</a>
-                      </div>
-                    </div>
-                  </div>   
-    
-                  <div class="text-center">
-                    <a href="./noticas.html" class="btn btn-warning mt-5">Todos las Noticas</a>
-                  </div>
-                  
-            </div>
-        </section>
-    </div>
-      <!-- Noticias Aqui -->
-
-
-
     <!-- Proyectos -->
     <div class="parallax2">
         <section class="proyectoSection">
             <div class="container proyectoDiv">
-                <h1 style="font-weight: bold; color: rgb(0, 0, 0); background-color:gray ; border-radius: 25px;">Proyectos Recientes</h1>
-    
-                <div class="card-deck">
-                    <div class="card">
-                      <img src="./images/carousel_inicio/1.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text alineadoIzquierda"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" class="btn btn-warning">Ver Más</a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="https://scontent.fcor11-1.fna.fbcdn.net/v/t1.0-9/84534340_2539592299693106_4734577694329536512_o.jpg?_nc_cat=100&_nc_sid=110474&_nc_ohc=3qwVzOHqZMwAX-fl6IY&_nc_ht=scontent.fcor11-1.fna&oh=68761de0a509c283bb611c30d822271b&oe=5E82AEB2" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text alineadoIzquierda"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" class="btn btn-warning">Ver Más</a>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="./images/carousel_inicio/2.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text alineadoIzquierda"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" class="btn btn-warning">Ver Más</a>
-                      </div>
-                    </div>
-                  </div>  
-                  
-                  <div class="text-center">
-                    <a href="./proyectos.html" class="btn btn-warning mt-5">Todos los Proyectos</a>
-                  </div>
+                <h1 id="section5" style="font-weight: bold; color: rgb(0, 0, 0); background-color:gray ; border-radius: 25px;">Proyectos Recientes</h1>
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-ff684731-81a5-4f6b-8c4a-b7e429d26000"></div>
             </div>
         </section>
     </div>
@@ -308,7 +210,7 @@
         <article class="cooperar col-12 col-md-12 col-lg-12 col-xl-12 text-center mt-4" scrolling="no"> 
             <ul class="container row mb-5 ">
                 <li data-aos="zoom-out-up" class="col-12 col-md-12 col-lg-6 col-xl-6 text-center">
-                  <p class="cooepra_especial "><strong>COPATE</strong> ¡ COOPERA CON ALIMENTOS NO PRECEDEROS ! o ! CON JUGUETES Y ROPA QUE NO USAS! Comunicate por WhatsApp </p>
+                  <p class="cooepra_especial "><strong>COPATE: </strong> Podemos crear una sociedad más inclusiva, eliminando en primer lugar la idea de que solo las personas en el poder o de cierta edad, o peor, de cierto género, son líderes.  Comunicate con nosotros. 😀  </p>
                 </li>
                 <li data-aos="zoom-in-up" class=" col-12 col-md-12 col-lg-6 col-xl-6"><a href="https://wa.me/5493834973405" target="_blank">
                   <span class="giro"></span>
@@ -352,21 +254,21 @@
             </article >
             <article class="comunidad 
             col-12 col-md-6 col-lg-6 col-xl-6 text-center mt-4">
-                <p><strong>COPATE</strong> ¡UNETE A NOSOTROS EN NUESTRO GRUPO !</p>
+                <p><strong>COPATE</strong> ¡CHATEA O ENCONTRANOS!</p>
                 <ul class="container mb-5">
-                    <li data-aos="zoom-in-up"><a href="https://chat.whatsapp.com/Haip2HjPanx1IHfw9md6P8" target="_blank">
+                    <li data-aos="zoom-in-up"><a href="m.me/copatecatamarca" target="_blank">
                             <span class="giro"></span>
                             <span class="giro"></span>
                             <span class="giro"></span>
                             <span class="giro"></span>
-                            <i class="fab fa-whatsapp-square"></i>
+                            <i class="fab fa-facebook-messenger"></i>
                         </a></li>
-                    <li data-aos="zoom-in-up"><a href="https://t.me/joinchat/OGLy-03UhOXTmx2iOht2qg" target="_blank">
+                    <li data-aos="zoom-in-up"><a href="https://goo.gl/maps/7T4dAzBbjv7EUVx29" target="_blank">
                             <span class="giro"></span>
                             <span class="giro"></span>
                             <span class="giro"></span>
                             <span class="giro"></span>
-                            <i class="fab fa-telegram"></i>
+                            <i class="fas fa-map-marker-alt"></i>
                         </a></li>
                     </ul>  
             </article>
@@ -375,23 +277,6 @@
     <!-- Redes y Comunidad -->
 
     <!-- Colaboradores -->
-    <div class="parallax7">
-        <section class="row" style="padding-top: 20%;">
-            <div class="container">
-                <h2   id="section5"  class="text-center font-weight-bolder">Colaboradores</h2>
-                <section class="customer-logos slider slick-listlistcolaboradores">
-                    <div class="slide"><img  class="img-fluid" style=" width: 100px; height: 100px;" src="http://productoscongeladosrosario.com/wp-content/uploads/2015/10/YO-helados.png"><p>Yo Heladerias</p></div>
-                    <div class="slide"><img  class="img-fluid" style=" width: 100px; height: 100px;" src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"><p>Nombre</p></div>
-                    <div class="slide"><img  class="img-fluid" style=" width: 100px; height: 100px;" src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"><p>Nombre</p></div>
-                    <div class="slide"><img  class="img-fluid" style=" width: 100px; height: 100px;" src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"><p>Nombre</p></div>
-                    <div class="slide"><img  class="img-fluid" style=" width: 100px; height: 100px;" src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"><p>Nombre</p></div>
-                    <div class="slide"><img  class="img-fluid" style=" width: 100px; height: 100px;" src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"><p>Nombre</p></div>
-                    <div class="slide"><img  class="img-fluid" style=" width: 100px; height: 100px;" src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"><p>Nombre</p></div>
-                    <div class="slide"><img  class="img-fluid" style=" width: 100px; height: 100px;" src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"><p>Nombre</p></div>
-                 </section>  
-            </div>
-        </section> 
-    </div>
     <!-- Colaboradores -->
     
 <!-- Footer -->
